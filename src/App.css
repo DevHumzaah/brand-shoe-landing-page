@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --red: #d01c28;
+    --gray: #2e2e2e;
+}
+*{
+    margin: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+button{
+   all: unset;
+   padding: 6px 16px;
+   background: var(--red);
+   height:32px;
+   color: white;
+   font-weight: 500; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 72px;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.brand-icons {
+    display: flex;
+    gap: 10px; 
+  }
+  
+  .brand-icons img {
+    width: 24px;  
+    height: 24px; 
+    object-fit: contain; 
+    cursor: pointer; 
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .brand-icons img:hover {
+    transform: scale(1.1); 
+  }
+  
+.section{
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: calc(100vh - 72px);
+}
+.section-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section h1{
+font-weight: 700;
+line-height: 102px;
+font-size: 108px;
+}
+.section p{
+    font-weight: 500;
+    color: var(--gray);
+    }
+
+.section-btn{
+    display: flex;
+    gap: 40px;
+    cursor: pointer; 
+    transition: transform 0.2s ease-in-out;
+
+  }
+  .secondary-btn{
+    background: transparent;
+    color: var(--gray);
+    border: 1px solid gray;
+
+  }
+  
+  .section-btn :hover {
+    transform: scale(1.1); 
+  }
+  
+
+  .shopping p{
+    
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+  }
+
